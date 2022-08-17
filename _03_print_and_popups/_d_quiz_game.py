@@ -37,6 +37,19 @@ if __name__ == '__main__':
  else:
      score-=1
      messagebox.showinfo(message="incorect, stanley hudson")
+userinput = simpledialog.askstring("Office Quiz", "Who are the three main heads of the party planing commity?")
+if userinput=="pam angela phylis":
+    score+=1
+    messagebox.showinfo(message="correct")
+else:
+    score-=1
+    messagebox.showinfo(message="incorect, pam angela phylis")
+if score>2:
+    messagebox.showinfo(message="congrats, you passed!")
+else:
+    messagebox.showinfo(message="you failed:( try agin next time")
+
+
     # After all the questions have been asked, tell the user their final score
     # remember to convert your variable to a string using the str() function 
     
